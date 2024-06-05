@@ -663,7 +663,106 @@
 
   }
   
+
+ /* SHOP PAGE */
+ #page-header {
+    background-image: url("/src/img/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+ h2,
+    p{
+    color: #fff;
+    }
   
+
+    }
+
+
+    #index_section3{
+      
+            .search {
+                display: flex;
+                align-items: center;
+                width: 95%;
+                margin: 0 auto;
+                padding: 40px 0;
+
+
+                  .search-input {
+                flex: 1;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ddd;
+                border-radius: 4px 0 0 4px;
+                outline: none;
+            }
+            
+            .search-button {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                background-color: #007BFF;
+                color: #fff;
+                border-radius: 0 4px 4px 0;
+                cursor: pointer;
+            }
+            
+            .search-button:hover {
+                background-color: #0056b3;
+            }
+            }
+
+            hr{
+                width: 95%;
+                margin: 0 auto;
+            }
+            
+            .categories{
+                padding: 40px 0;
+                width: 95%;
+                margin: 0 auto;
+                padding: 40px 0;
+
+                .category-select {
+                    width: 100%;
+                    max-width: 300px;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                    outline: none;
+                    background-color: #f9f9f9;
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                }
+                
+                .category-select:focus {
+                    border-color: #007BFF;
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+                }
+                
+                .category-select option {
+                    padding: 10px;
+                    font-size: 16px;
+                    background-color: var(--dark-background);
+                    color: var(--dark-color);
+                }
+                
+                .category-select option:hover {
+                    background-color: var(--dark-background);
+                }
+            }
+          
+        }
+    
+    
+   
  
   
   
