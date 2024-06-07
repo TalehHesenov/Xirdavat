@@ -33,6 +33,9 @@
     background-color: var(--dark-background);
     box-shadow: var(--box-shadow);
     position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
 
 
     .header_up{
@@ -665,16 +668,16 @@
   
 
  /* SHOP PAGE */
- #page-header {
-    background-image: url("/src/img/b1.jpg");
+#page-header{
     width: 100%;
-    height: 40vh;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 14px;
+ height: 40vh;
+ background-size: cover;
+ display: flex;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ padding: 14px; 
+
 
  h2,p{
     color: #fff;
@@ -686,7 +689,14 @@
     }
   
 
-    }
+}
+
+ .page_shop {
+    background-image: url(/src/img/b1.jpg);
+ }
+
+
+    
 
 
     #index_section3{
@@ -799,9 +809,8 @@
 
 
 
-   #page-header {
-    background-image: url("/src/img/b19.jpg");
-   
+   .page_blog{
+    background-image: url(/src/img/b19.jpg);
     }
    
   
@@ -813,6 +822,7 @@
     position: relative;
       display: flex;
       align-items: center;
+      justify-content: start;
       width: 100%;
       padding-bottom: 90px;
    }
@@ -844,28 +854,199 @@
     left: 0;
     font-size: 30px;
     font-weight: 700;
-    color: #c9cbce;
-    z-index: -9;
+    color: var(--dark-color);
+    z-index: 9;
+   }
+
+   .leave{
+    width: 3px;
+    height: 180px;
+    background-color:#000;
+    margin-right: 20px;
    }
    .blog-details{
-    h4{
-     font-size: 25px;
+    padding-top: 20px;
+    p{
+     font-size: 20px;
     margin-bottom: 20px;
     color: var(--dark-color);
-    font-weight: 700;   
+    font-weight: 700; 
+    
+    a{
+        color: var(--dark-button-color);
     }
-    p{
-
-        text-align: center;
-        color: var(--dark-color);
-
     }
+   
     
    }
 
 
    }
+
+
+
+   /* CONTACT PAGE */
+
+   .page_contact{
+    background-image: url(/src/img/banner.png);
+   }
+
+#contact-details{
   
+    padding: 10px 10px;
+background-color: var(--dark-background);
+    
+
+    .container{
+          display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+    .details{
+        width: 40%; 
+      }
+      
+    .details span,
+      #form-details form span{
+       font-size: 12px;
+       color: var(--dark-color);
+
+      }
+      
+      .details h2,
+      #form-details form h2{
+       font-size: 26px;
+       line-height: 35px;
+       padding: 20px 0;
+       color: var(--dark-color);
+      }
+      
+      .details h3{
+       font-size: 16px;
+       padding-bottom: 15px;
+       color: var(--dark-color);
+      }
+      
+      .details li{
+       list-style: none;
+       display: flex;
+       padding: 10px 0;
+      }
+    
+     .details li i{
+      font-size: 14px;
+      padding-right: 22px;
+      color: var(--dark-color);
+      }
+      
+     .details li p{
+      margin: 0;
+      font-size: 14px;
+      color: var(--dark-color);
+      }
+      
+      .map{
+        width: 55%;
+        height: 400px;
+      }
+      
+    .map iframe{
+        width: 100%;
+        height: 100%;
+      }
+  }
+  
+  
+  
+  #form-details{
+ 
+    background-color: var(--dark-background);
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        padding: 130px ;
+        border: 1px solid #e1e1e1;
+    }
+
+    form{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span{
+            color: var(--dark-color);
+        }
+        h2{
+            color: var(--dark-color);
+        }
+
+        button.normal{
+            font-size: 14px;
+            font-weight: 600;
+            padding: 15px 30px;
+            color: var(--dark-background);
+            background-color: var(--dark-color);
+            border-radius: 4px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transition: 0.3s ease-in-out;
+        }
+      }
+      
+     form input,
+    form textarea{
+        width: 100%;
+        padding: 12px 15px;
+        outline: none;
+        margin-bottom: 20px;
+        border: 1px solid #e1e1e1;
+      }
+      
+      form button{
+        background-color: #088178;
+        color: #fff;
+      }
+      
+     .people{
+        padding-top: 20px;
+       
+      }
+      
+      
+      .people div{
+        padding-bottom: 25px;
+        display: flex;
+        align-items: flex-start;
+      }
+      
+      .people div img{
+        width: 65px;
+        height: 65px;
+        object-fit: cover;
+        margin-right: 15px;
+      }
+      
+     .people div p{
+       margin: 0;
+       font-size: 13px;
+       line-height: 25px;
+       color: var(--dark-color);
+      }
+      
+      .people div p span{
+       display: block;
+       font-size: 16px;
+       font-weight: 600;
+       color: var(--dark-color);
+      }
+  }
+  
+ 
+
   
   
   
