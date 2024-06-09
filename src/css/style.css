@@ -36,6 +36,7 @@
     top: 0;
     left: 0;
     z-index: 999;
+    
 
 
     .header_up{
@@ -131,7 +132,7 @@
             }
         }
 
-        .nav{
+        nav{
             display: flex;
             align-items: center;
             gap: 60px;
@@ -140,6 +141,12 @@
                 display: flex;
                 align-items: center;
                 gap: 20px;
+
+                .close_button{
+                    font-size: 28px;
+                    display: none;
+                    color: var(--dark-color);
+                }
 
                 li{
                     a{
@@ -184,7 +191,26 @@
             }
 
             .shop_icon{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
                 position: relative;
+                
+                .bars_button{
+                    display: none;
+                    font-size: 26px;
+                    transition: all .4s; 
+                    cursor: pointer;
+                    color: var(--dark-color);
+
+                    &:hover{
+                    color: #FA6E23;
+                    
+                }
+                }
+
+               
                 a{
                     color:var(--dark-color);
 
@@ -1050,6 +1076,8 @@ background-color: var(--dark-background);
 
   
   #about-head{
+    background-color: var(--dark-background);
+    color: var(--dark-color);
     img{
     padding-top: 50px;
     width: 40%;
@@ -1071,6 +1099,12 @@ div{
    align-items: center;
     flex-direction: column;
     padding: 50px 0;
+    background-color: var(--dark-background);
+    color: var(--dark-color);
+
+    a{
+        color: #FA6E23;
+    }
   }
   
   #about-app .video{
@@ -1213,21 +1247,24 @@ table thead td{
     margin-bottom: 30px;
     border: 1px solid #e2e9e1;
     padding: 30px;
-  }
-  
-  #subtotal table{
+    
+    
+    table{
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
   }
   
-  #subtotal table td{
+  table td{
    width: 50%;
    border: 1px solid #e1e1e1;
    padding: 10px;
    font-size: 13px;
    color: var(--dark-color)
   }
+  }
+  
+  
 
 
 
@@ -1374,12 +1411,180 @@ table thead td{
     #header{
         .header_down{
             nav{
+                
+                position: relative;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    position: fixed;
+                    top: 0;
+                    right: -300px;
+                    height: 100vh;
+                    width: 300px;
+                    background-color: var(--dark-background);
+                    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+                    padding: 80px 0 0 10px;
+                    transition: 0.5s;
+                    z-index: 999;
+
+                    .close_button{
+
+                        display: block;
+
+                    }
+                }
+                .shop_icon{
+                    .bars_button{
+                            display: block;
+                        }
+                }
+            
+            }
+
+
+           
+        }
+
+    }
+#index_section2{
+
+        .container{
+            flex-wrap: wrap;
+        }
+        
+    }
+    #index_section3{
+        .container{
+            .products{
+               .card{
+                width: 40%;
+               }
+            }
+
+            
+            
+        }
+    }
+    
+    
+    
+    
+
+    #index_section4{
+        .container{
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+
+            .form {
+                width: 80%;
+            }
+        }
+    }
+
+   
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    #index_section1{
+        .container{
+
+            .section1_left{
+
+                text-align: center;
+                
+            }
+
+            .section1_right{
                 display: none;
-             
             }
         }
 
     }
+
+    #index_section3{
+
+        .product_up{
+            text-align: center;
+
+        }
+
+    }
+    
+    #index_section4{
+        .container{
+          
+            .form {
+                display: flex;
+                gap: 10px;
+                flex-direction: column;
+                align-items: center;
+
+                button{
+                    width: 50%;
+                }
+            }
+        }
+    }
+   
+  }
+
+  @media only screen and (max-width: 530px) {
+
+  
+
+    #index_section3{
+.container{
+    .products{
+         .card{
+            width: 80%;
+           }
+    }
+}
+
+
+    }
+    
+   
+  }
+
+  @media only screen and (max-width: 480px) {
+
+  
+
+    #header{
+        .header_up{
+            .contact{
+               span{
+                display: none;
+
+               }
+               a[href^="mail"]{
+                display: none;
+               }
+                
+            }
+        }
+    }
+
+    #index_section4{
+        .container{
+          
+            .form {
+                
+
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
+   
   }
 
   
